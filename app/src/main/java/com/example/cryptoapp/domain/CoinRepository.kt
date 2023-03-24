@@ -8,6 +8,6 @@ interface CoinRepository {
 
     fun getCoinInfo(frobSymbol: String): LiveData<CoinInfo>
 
-    suspend fun loadData()
+    fun loadData()
 
 }
