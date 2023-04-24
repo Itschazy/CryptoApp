@@ -15,6 +15,7 @@ class CoinApp : Application(), Configuration.Provider {
         DaggerApplicationComponent.factory().create(this)
     }
 
+    #commit
     override fun onCreate() {
         component.inject(this)
         super.onCreate()
